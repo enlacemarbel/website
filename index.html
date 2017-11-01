@@ -1,1 +1,161 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio</title>
+    <!-- Custom CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper animsition">
+        <!-- Header Mobile -->
+        <div class="headerMobile">
+            <p><span class="pe-7s-menu pe-2x pe-va contactIcon"onclick="openNav()"></span>Men&uacute;</p>
+            <a class="btn btnDark btnXSmall" href="">confirma asistencia</a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closeMobile">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()"><span class="pe-7s-close-circle"></span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="animsition-link" href="index.html">Inicio</a></li>
+                    <li><a class="animsition-link" href="visita.html">Organiza tu visita</a>
+                        <ul>
+                            <li><a class="animsition-link" href="llegar.html">¿C&oacute;mo llegar?</a></li>
+                            <li><a class="animsition-link" href="comer.html">¿D&oacute;de comer?</a></li>
+                            <li><a class="animsition-link" href="dormir.html">¿D&oacute;nde dormir?</a></li>
+                            <li><a class="animsition-link" href="hacer.html">¿Qu&eacute; hacer?</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="animsition-link" href="ceremonia.html">La ceremonia</a></li>
+                    <li><a class="animsition-link" href="invitado.html">El rinc&oacute;n del invitado</a></li>
+                    <li><a class="animsition-link" href="peluqueria.html">Peluquer&iacute;as</a></li>
+                </ul>      
+            </nav>
+        </div>
+        <div class="fakeHeader"></div>
+        <!-- End of Header Mobile -->
+        <!-- Home Left -->
+        <div class="homeLeft">
+            <div class="homeLeft-content">
+                <img class="hideMobile" src="images/letter@1x.svg" alt="">
+                <img class="hideDesktop"  src="images/letterMobile@1x.svg" alt="">
+                <p class="quote paddingHorz-xl marginDown-xl marginUp-md">"No fue un accidente ni existe el destino, fue tan solo suerte fue todo un milagro."</p>
+                <a class="btn btnDark" href="">Confirma asistencia</a>
+            </div> 
+            <div class="homeLeft-contact basepaddingVert">
+                <p>
+                    <span class="bold">ALBERTO</span>
+                    <span class="pe-7s-phone pe-va contactIcon"></span>645 764 535
+                    <span class="pe-7s-mail pe-va contactIcon"></span>a.fergon@hotmail.es
+                </p>
+                <p>
+                    <span class="bold">MACARENA</span>
+                    <span class="pe-7s-phone pe-va contactIcon"></span>650 578 434
+                    <span class="pe-7s-mail pe-va contactIcon"></span><a href="mailto:macarena.gascon@gmail.com"> macarena.gascon@gmail.com</a>
+                </p>
+            </div>
+        </div> <!-- End of Home Left -->
+        <!-- Home Right -->
+        <div class="homeRight">
+            <div class="row nopadding">
+                <div class="col-sm-6 homeRight__visita nopadding">
+                    <a class="btn btnLight absoluteCenter animsition-link" href="visita.html">Organiza tu visita</a>
+                </div>
+                <div class="col-sm-6 homeRight__ceremonia nopadding">
+                    <a class="btn btnLight absoluteCenter animsition-link" href="ceremonia.html">la ceremonia</a>
+                </div>
+                <div class="col-sm-6 homeRight__invitado nopadding">
+                    <a class="btn btnLight absoluteCenter animsition-link" href="invitado.html">El rinc&oacute;n del invitado</a>
+                </div>
+                <div class="col-sm-6 homeRight__peluqueria nopadding">
+                    <a class="btn btnLight absoluteCenter animsition-link" href="peluqueria.html">Peluquer&iacute;as</a>
+                </div>
+            </div>
+        </div><!-- End of Home Right -->
+        <!-- Footer -->
+        <footer>
+            <p class="contactMobile marginDown">
+                <span class="bold">ALBERTO</span><br>
+                <span class="pe-7s-phone pe-va contactIcon"></span> 645 764 535<br>
+                <span class="pe-7s-mail pe-va contactIcon"></span><a href="mailto:a.fergon@hotmail.es"> a.fergon@hotmail.es</a>
+            </p>
+            <p class="contactMobile separatorSidenav-down marginDown-md">
+                <span class="bold">MACARENA</span><br>
+                <span class="pe-7s-phone pe-va contactIcon"></span> 650 578 434<br>
+                <span class="pe-7s-mail pe-va contactIcon"></span><a href="mailto:macarena.gascon@gmail.com"> macarena.gascon@gmail.com</a>
+            </p>
+            <p class="contactMobile">
+                Si tienes pensado regalar puedes realizar el ingreso en esta cuenta, gracias
+            </p>
+            <p class="contactMobile">
+                ES00 0000 0000 00 0000000000
+            </p>
+        </footer><!--End of Footer -->
+    </div><!-- End of Wrapper -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- NiceScroll -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <!-- Animsition -->
+    <script src="js/animsition.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $(".animsition").animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 800,
+            outDuration: 800,
+            linkElement: '.animsition-link',     
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+            loading: false,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '<img src="images/letter@1x.svg" />', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+          });
+        });
+    </script>
+     <script>
+      $("body, .wrapper").niceScroll({
+      cursorcolor:"#4e5d55",
+      cursorwidth:"8px",
+      background:"rgba(20,20,20,0)",
+      cursorborderradius:0
+      });
+    </script>
+    <script>
+      /* Open the sidenav */
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      /* Close/hide the sidenav */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
