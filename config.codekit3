@@ -15,6 +15,12 @@
 		"oAP": "\/ceremonia.html",
 		"oF": 0
 		},
+	"\/CNAME": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/CNAME",
+		"oF": 0
+		},
 	"\/comer.html": {
 		"ft": 8192,
 		"oA": 2,
