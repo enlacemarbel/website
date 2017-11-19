@@ -7,8 +7,6 @@
     <title>¿D&oacute;nde dormir?</title>
     <!-- Custom CSS -->
     <link href="css/stylesheet.css" rel="stylesheet">
-    <!-- Animate -->
-    <link rel="stylesheet" href="css/animate.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet">
@@ -51,11 +49,11 @@
         <nav>
           <ul>
             <li><a class="animsition-link" href="index.html">Inicio</a></li>
-            <li><a class="textRed animsition-link" href="visita.html">Organiza tu visita</a>
+            <li><a class="animsition-link" href="visita.html">Organiza tu visita</a>
               <ul>
                 <li><a class="animsition-link" href="llegar.html">¿C&oacute;mo llegar?</a></li>
                 <li><a class="animsition-link" href="comer.html">¿D&oacute;nde comer?</a></li>
-                <li><a class="animsition-link" href="dormir.html">¿D&oacute;nde dormir?</a></li>
+                <li><a class="textRed animsition-link" href="dormir.html">¿D&oacute;nde dormir?</a></li>
                 <li><a class="animsition-link" href="hacer.html">¿Qu&eacute; hacer?</a></li>
               </ul>
             </li>
@@ -64,7 +62,7 @@
             <li><a class="animsition-link" href="peluqueria.html">Peluquer&iacute;as</a></li>
             <li><a href="https://www.google.com/maps/d/viewer?mid=1rYjtzMYphJ8dvt2YH2TxG3w2kP6mDcwh&hl=es&usp=sharing" target="_blank">Mapa informativo</a></li>
           </ul>
-           <a class="btn btnDark btnSmall  marginUp-xl marginDown-md typeform-share link" href="https://macarena8.typeform.com/to/WTtHTz" data-mode="popup" target="_blank">Confirma asistencia</a> 
+           <a class="btn btnDark btnSmall marginUp-md marginDown-md typeform-share link" href="https://macarena8.typeform.com/to/WTtHTz" data-mode="popup" target="_blank">Confirma asistencia</a> 
           <a class="btn btnDark btnSmall" href="" data-toggle="modal" data-target="#modalBank">¿quieres regalar?</a>
         </nav>
         <!-- Modal -->
@@ -108,7 +106,7 @@
            <section class="yellow marginDown-xl">
               <h1 class="marginDown">Alojamiento</h1>
               <p class="marginDown">
-                Para los más previsores, ya podéis reservar en el <a href="http://hotelhczoom.com/" target="_blank">Hotel Zoom</a> un alojamiento con encanto en el que ya están listos y preavisados para atender vuestras reservas. Por favor os pedimos que indiquéis que se trata de una reserva para la boda de Alberto y Macarena, de esta forma os mantendrán las tarifas que veis a continuación, además este hotel cuenta con uno de los mejores restaurantes de Pozoblanco bajo nuestra humilde opinión,  <a href="https://www.tripadvisor.es/Restaurant_Review-g1212916-d8834103-Reviews-Restaurante_Quercus-Pozoblanco_Province_of_Cordoba_Andalucia.html" target="_blank">Restaurante Quercus.</a>
+                Para los más previsores, ya podéis reservar en el Hotel Zoom un alojamiento con encanto en el que ya están listos y preavisados para atender vuestras reservas. Por favor, os pedimos que indiquéis que se trata de una reserva para la boda de Alberto y Macarena, de esta forma os mantendrán las tarifas que veis a continuación, además este hotel cuenta con uno de los mejores restaurantes de Pozoblanco bajo nuestra humilde opinión, Restaurante Quercus.
               </p>
               <ul class="baseLink marginDown-xl">
                 <li><a href="http://hotelhczoom.com/"><span class="pe-7s-angle-right pe-2x pe-va"></span>Web del hotel</a></li>
@@ -152,7 +150,7 @@
                 </div>
               </div><!--End of Data table -->
               <p class="marginDown">
-                Para los más previsores, ya podéis reservar en el Hotel Zoom un alojamiento con encanto en el que ya están listos y preavisados para atender vuestras reservas. Por favor os pedimos que indiquéis que se trata de una reserva para la boda de Alberto y Macarena, de esta forma os mantendrán las tarifas que veis a continuación, además este hotel cuenta con uno de los mejores restaurantes de Pozoblanco bajo nuestra humilde opinión, Restaurante Quercus.
+                Estamos a la espera de la inauguración de otro hotel que prevemos abrirá sus puertas para navidad, no obstante, si lo tienes claro, te aconsejamos no dejarlo pasar y hacer ya la reserva en el Hotel Zoom. 
               </p>
             </section><!--End of Section 01 -->
             <!-- Section 04 -->
@@ -182,61 +180,15 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- NiceScroll -->
-    <script src="js/jquery.nicescroll.min.js"></script>
-      <!-- Animsition -->
-    <script src="js/animsition.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="js/custom-min.js"></script>
+    <!-- Nice Scroll -->
     <script>
-        $(document).ready(function() {
-          $(".animsition").animsition({
-            inClass: 'fade-in',
-            outClass: 'fade-out',
-            inDuration: 800,
-            outDuration: 800,
-            linkElement: '.animsition-link',
-            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-            loading: false,
-            loadingParentElement: 'body', //animsition wrapper element
-            loadingClass: 'animsition-loading',
-            loadingInner: '', // e.g '<img src="loading.svg" />'
-            timeout: false,
-            timeoutCountdown: 5000,
-            onLoadEvent: true,
-            browser: [ 'animation-duration', '-webkit-animation-duration'],
-            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-            overlay : false,
-            overlayClass : 'animsition-overlay-slide',
-            overlayParentElement : 'body',
-            transition: function(url){ window.location.href = url; }
-          });
-        });
+      // $(".colRight, body").niceScroll({
+      // cursorcolor:"#4e5d55",
+      // cursorwidth:"8px",
+      // background:"rgba(20,20,20,0)",
+      // cursorborderradius:0
+      // });
     </script>
-    <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-    <script>
-      $(".colRight, body").niceScroll({
-      cursorcolor:"#4e5d55",
-      cursorwidth:"8px",
-      background:"rgba(20,20,20,0)",
-      cursorborderradius:0
-      });
-    </script>
-    <script>
-      /* Open the sidenav */
-      function openNav() {
-          document.getElementById("mySidenav").style.width = "100%";
-      }
-
-      /* Close/hide the sidenav */
-      function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
-     <!-- Typeform -->
-    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
-    </script>
-  </body>
 </html>

@@ -7,8 +7,6 @@
     <title>La Ceremonia</title>
     <!-- Custom CSS -->
     <link href="css/stylesheet.css" rel="stylesheet">
-    <!-- Animate -->
-    <link rel="stylesheet" href="css/animate.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet">
@@ -51,7 +49,7 @@
         <nav>
           <ul>
             <li><a class="animsition-link" href="index.html">Inicio</a></li>
-            <li><a class="textRed animsition-link" href="visita.html">Organiza tu visita</a>
+            <li><a class="animsition-link" href="visita.html">Organiza tu visita</a>
               <ul>
                 <li><a class="animsition-link" href="llegar.html">¿C&oacute;mo llegar?</a></li>
                 <li><a class="animsition-link" href="comer.html">¿D&oacute;nde comer?</a></li>
@@ -59,12 +57,12 @@
                 <li><a class="animsition-link" href="hacer.html">¿Qu&eacute; hacer?</a></li>
               </ul>
             </li>
-            <li><a class="animsition-link" href="ceremonia.html">La ceremonia</a></li>
+            <li><a class="textRed animsition-link" href="ceremonia.html">La ceremonia</a></li>
             <li><a class="animsition-link" href="invitado.html">El rinc&oacute;n del invitado</a></li>
             <li><a class="animsition-link" href="peluqueria.html">Peluquer&iacute;as</a></li>
             <li><a href="https://www.google.com/maps/d/viewer?mid=1rYjtzMYphJ8dvt2YH2TxG3w2kP6mDcwh&hl=es&usp=sharing" target="_blank">Mapa informativo</a></li>
           </ul>
-           <a class="btn btnDark btnSmall  marginUp-xl marginDown-md typeform-share link" href="https://macarena8.typeform.com/to/WTtHTz" data-mode="popup" target="_blank">Confirma asistencia</a> 
+           <a class="btn btnDark btnSmall marginUp-md marginDown-md typeform-share link" href="https://macarena8.typeform.com/to/WTtHTz" data-mode="popup" target="_blank">Confirma asistencia</a> 
           <a class="btn btnDark btnSmall" href="" data-toggle="modal" data-target="#modalBank">¿quieres regalar?</a>
         </nav>
         <!-- Modal -->
@@ -129,7 +127,7 @@
               <p>Segundo autobús de vuelta</p>
             </div>
             <div class="timelineItem">
-              <p class="timelineTitle bold">04:30h</p>
+              <p class="timelineTitle bold">03:30h</p>
               <p>Último autobús de vuelta</p>
             </div>
           </div>
@@ -143,8 +141,8 @@
                La Capilla de Nuestro Padre Jesús Nazareno es la sede de la hermandad de Nuestro Padre Jesús Nazareno, fundada en 1605. En su interior guarda la imagen de Jesús más antigua de Pozoblanco, datada en el primer tercio del siglo XVII y de autor anónimo. La capilla fue construida como capilla del Hospital de Jesús Nazareno fundado en 1682 y, actualmente, ejerce como capilla de la residencia de ancianos regida por la congregación de Hermanas Hospitalarias de Jesús Nazareno. 
               </p>
               <ul class="baseLink marginDown-xl">
-                <li><a href="https://www.jesusnazarenopozoblanco.org/" target="_blank"><span class="pe-7s-angle-right pe-2x pe-va"></span>Web jesús del nazareno</a></li>
-                <li><a href="https://andaluciarustica.com/pozoblanco-capilla-de-nuestro-padre-jesus-nazareno.htm" target="_blank"><span class="pe-7s-angle-right pe-2x pe-va"></span>Web capilla</a></li>
+                <li><a href="https://www.jesusnazarenopozoblanco.org/" target="_blank"><span class="pe-7s-angle-right pe-2x pe-va"></span>Hermandad Nuestro Padre Jesús Nazareno</a></li>
+                <li><a href="https://andaluciarustica.com/pozoblanco-capilla-de-nuestro-padre-jesus-nazareno.htm" target="_blank"><span class="pe-7s-angle-right pe-2x pe-va"></span>Más información sobre la capilla</a></li>
               </ul>
             </section><!--End of Section 01 -->
              <!-- Section 02 -->
@@ -156,9 +154,12 @@
             </section><!--End of Section 02 -->
             <!-- Section 03 -->
            <section class="blue marginDown-xl">
-              <h1 class="marginDown">Autob&uacute;ses</h1>
+              <h1 class="marginDown">Servicio de autob&uacute;s</h1>
               <p class="marginDown">
-               El Cortijo Navalobos será el lugar donde celebraremos el enlace entre granito, madera, encinas y aire puro, esta casa rural perteneciente al término municipal de Pozoblanco está situada al lado de la ermita de la Virgen de Luna, a escasos 20 minutos del pueblo. 
+                Si quieres moverte en este transporte hasta el convite, habrá un autobús esperándote al finalizar la ceremonia en Avenida Madre Carmen Sallés 10, un par de minutos caminando desde la iglesia.  
+              </p>
+              <p class="marginDown">
+                Para la vuelta también podrás usar este servicio en uno de sus tres horarios de recogida: 23:30, 2:00 o 3:30, el autobús te dejará en la puerta del Hotel Zoom. Por favor, al confirmar tu asistencia infórmanos de tu intención de hacer uso del mismo, ¡si bebes no conduzcas!  
               </p>
             </section><!--End of Section 03 -->
             <!-- Section 04 -->
@@ -188,61 +189,16 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- NiceScroll -->
-    <script src="js/jquery.nicescroll.min.js"></script>
-      <!-- Animsition -->
-    <script src="js/animsition.min.js"></script>
+     <!-- Custom Javascript -->
+    <script src="js/custom-min.js"></script>
+    <!-- Nice Scroll -->
     <script>
-        $(document).ready(function() {
-          $(".animsition").animsition({
-            inClass: 'fade-in',
-            outClass: 'fade-out',
-            inDuration: 800,
-            outDuration: 800,
-            linkElement: '.animsition-link',
-            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-            loading: false,
-            loadingParentElement: 'body', //animsition wrapper element
-            loadingClass: 'animsition-loading',
-            loadingInner: '', // e.g '<img src="loading.svg" />'
-            timeout: false,
-            timeoutCountdown: 5000,
-            onLoadEvent: true,
-            browser: [ 'animation-duration', '-webkit-animation-duration'],
-            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-            overlay : false,
-            overlayClass : 'animsition-overlay-slide',
-            overlayParentElement : 'body',
-            transition: function(url){ window.location.href = url; }
-          });
-        });
-    </script>
-    <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-    <script>
-      $(".colRight,.colLeft,body").niceScroll({
-      cursorcolor:"#4e5d55",
-      cursorwidth:"8px",
-      background:"rgba(20,20,20,0)",
-      cursorborderradius:0
-      });
-    </script>
-    <script>
-      /* Open the sidenav */
-      function openNav() {
-          document.getElementById("mySidenav").style.width = "100%";
-      }
-
-      /* Close/hide the sidenav */
-      function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
-     <!-- Typeform -->
-    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
+      // $(".colRight,.colLeft,body").niceScroll({
+      // cursorcolor:"#4e5d55",
+      // cursorwidth:"8px",
+      // background:"rgba(20,20,20,0)",
+      // cursorborderradius:0
+      // });
     </script>
   </body>
 </html>

@@ -6,57 +6,15 @@ Octubre 2017
 ****************************
 ***************************/
 
-/* ==========================================================================
-COLOR
-========================================================================== */
-
-@yellow:#ccb884;
-@green:#4e5d55;
-@red:#ce6e66;
-@blue:#8da1a0;
-
-/* ==========================================================================
-SPACES & MARGINS
-========================================================================== */
-@baseSpace:12px; //12px
-@spaceMd:24px;	//24px
-@spaceXl:48px;	//48px
-
-
-.marginUp { margin-top: @baseSpace;}
-.marginDown {margin-bottom: @baseSpace;}
-
-.marginUp-md { margin-top: @spaceMd;}
-.marginDown-md {margin-bottom: @spaceMd;}
-
-.marginUp-xl { margin-top: @spaceXl;}
-.marginDown-xl {margin-bottom: @spaceXl;}
-
-.basepadding {padding:@baseSpace;}
-.padding {padding:@baseSpace;}
-.paddingMd {padding:@spaceMd;}
-.paddingXl {padding:@spaceXl;}
-
-.basepaddingVert { padding:@baseSpace 0;}
-
-.paddingHorz-md {padding:0 @spaceMd;}
-.paddingHorz-xl {padding:0 @spaceXl;}
-
-/* ==========================================================================
-FONT SIZES AND STYLES
-========================================================================== */
-@basefont:16px;
-@fontXs:0.75em; //12px
-@fontSm:0.857em; //14px
-@fontMd:1.5em; //24px
-@fontXl:2.5em; //40px
-
-@adaptativefont:0.9vw; //Font will adapt with the screen width
 
 body {
 	font-size: @basefont;
 	font-family: 'Quattrocento', serif;
 	color: @green;
+}
+
+body::-webkit-scrollbar {
+display: none;
 }
 
 h1,h2,p {
@@ -149,6 +107,10 @@ MAIN FLEXBOX LAYOUT OUTSIDE BOOTSTRAP
 	align-content:stretch;
 }
 
+.wrapper-index {
+	min-height: 0px;
+} 
+
 /******** INICIO ********/
 
 .homeLeft {
@@ -163,13 +125,14 @@ MAIN FLEXBOX LAYOUT OUTSIDE BOOTSTRAP
 }
 .homeLeft-content {
 	.marginUp-md;
-	.paddingMd;
+	.paddingXl;
 }
 .homeLeft-contact {
 	width: 50%;
 	position: absolute;
 	display: block;
     bottom: 0;
+    padding: @baseSpace @spaceXl;
    	font-size: @fontXs;
    	text-align: center;
 
@@ -335,19 +298,19 @@ header {
 			    padding: 0;
 
 		    	li a {
-		    		font-size: @basefont;
+		    		font-size: @fontSm;
 		    		font-weight: normal;
-		    		margin: 0px 0px @baseSpace @baseSpace;
+		    		margin: 0px 0px @spaceXs @spaceXs;
 		    	}
 		    	li:last-child a {
-		    		margin: 0px 0px @spaceMd @baseSpace;
+		    		margin: 0px 0px @baseSpace @spaceXs;
 		    	}
 		    }
 		}
 
 		li a {
 		    display: block;
-		    margin: 0px 0px @baseSpace+2 0px;
+		    margin: 0px 0px @baseSpace 0px;
 		    .bold;
 		}
 
@@ -517,7 +480,7 @@ section.red {
 section.green {
 	h1 { color:@green;}
 	ul { li {color:@red;} }
-	p{a{ font-family: 'Vollkorn', serif;font-weight: 700 !important;color:@green;}}
+	p{a{ font-family: 'Vollkorn', serif;font-weight: 700 !important;color:@red;}}
 	
 }
 

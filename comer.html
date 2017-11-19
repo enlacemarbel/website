@@ -7,8 +7,6 @@
     <title>¿D&oacute;nde comer?</title>
      <!-- Custom CSS -->
     <link href="css/stylesheet.css" rel="stylesheet">
-    <!-- Animate -->
-    <link rel="stylesheet" href="css/animate.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet">
@@ -51,10 +49,10 @@
         <nav>
           <ul>
             <li><a class="animsition-link" href="index.html">Inicio</a></li>
-            <li><a class="textRed animsition-link" href="visita.html">Organiza tu visita</a>
+            <li><a class="animsition-link" href="visita.html">Organiza tu visita</a>
               <ul>
                 <li><a class="animsition-link" href="llegar.html">¿C&oacute;mo llegar?</a></li>
-                <li><a class="animsition-link" href="comer.html">¿D&oacute;nde comer?</a></li>
+                <li><a class="textRed animsition-link" href="comer.html">¿D&oacute;nde comer?</a></li>
                 <li><a class="animsition-link" href="dormir.html">¿D&oacute;nde dormir?</a></li>
                 <li><a class="animsition-link" href="hacer.html">¿Qu&eacute; hacer?</a></li>
               </ul>
@@ -64,7 +62,7 @@
             <li><a class="animsition-link" href="peluqueria.html">Peluquer&iacute;as</a></li>
             <li><a href="https://www.google.com/maps/d/viewer?mid=1rYjtzMYphJ8dvt2YH2TxG3w2kP6mDcwh&hl=es&usp=sharing" target="_blank">Mapa informativo</a></li>
           </ul>
-           <a class="btn btnDark btnSmall  marginUp-xl marginDown-md typeform-share link" href="https://macarena8.typeform.com/to/WTtHTz" data-mode="popup" target="_blank">Confirma asistencia</a> 
+           <a class="btn btnDark btnSmall marginUp-md marginDown-md typeform-share link" href="https://macarena8.typeform.com/to/WTtHTz" data-mode="popup" target="_blank">Confirma asistencia</a> 
           <a class="btn btnDark btnSmall" href="" data-toggle="modal" data-target="#modalBank">¿quieres regalar?</a>
         </nav>
         <!-- Modal -->
@@ -111,7 +109,7 @@
            Aunque en la boda podrás degustar algunos de los principales productos de la tierra, si eres de los que te gusta conocer los sitios por su cocina, te recomendamos no irte sin deleitarte con la gastronomía de la zona. El pueblo cuenta con un número bastante amplío de restaurantes, entre ellos algunos de nuestros favoritos que te recomendamos visitar son: 
           </p>
           <ul class="baseLink">
-            <li><a href="https://www.tripadvisor.es/Restaurant_Review-g1212916-d6624053-Reviews-Restobar-Pozoblanco_Province_of_Cordoba_Andalucia.html" target="_blank"><span class="pe-7s-angle-right pe-2x pe-va"></span>Restrobar</a></li>
+            <li><a href="https://www.tripadvisor.es/Restaurant_Review-g1212916-d6624053-Reviews-Restobar-Pozoblanco_Province_of_Cordoba_Andalucia.html" target="_blank"><span class="pe-7s-angle-right pe-2x pe-va"></span>Restobar</a></li>
             <li><a href="https://www.tripadvisor.es/Restaurant_Review-g1212916-d8834103-Reviews-Restaurante_Quercus-Pozoblanco_Province_of_Cordoba_Andalucia.html" target="_blank"><span class="pe-7s-angle-right pe-2x pe-va"></span>Restaurante Quercus</a></li>
             <li><a href="https://www.tripadvisor.es/Restaurant_Review-g1212916-d2232432-Reviews-El_Rincon_De_Juan-Pozoblanco_Province_of_Cordoba_Andalucia.html" target="_blank"><span class="pe-7s-angle-right pe-2x pe-va"></span>El rincón de Juan</a></li>
             <li><a href="https://www.lacepa.es/" target="_blank"><span class="pe-7s-angle-right pe-2x pe-va"></span>Mesón Restaurante La Cepa</a></li>
@@ -127,7 +125,7 @@
         </section><!-- End of Section -->
         <!-- Section -->
         <section class="green marginDown-xl">
-          <h1 class="marginDown">Grastronom&iacute;a</h1>
+          <h1 class="marginDown">Gastronom&iacute;a</h1>
           <p class="marginDown">
             La cocina tradicional de Pozoblanco procede de antiguos recetarios de pastores y aceituneros, <strong>tres son los pilares</strong> sobre los que se sustenta dicho recetario: pan, aceite y cerdo ibérico, producto estrella del Valle de los Pedroches, siendo la denominación de origen “Los Pedroches” la que dedica más superficie de dehesa a la cría del cerdo ibérico en España.
           </p>
@@ -174,61 +172,16 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- NiceScroll -->
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <!-- Animsition -->
-    <script src="js/animsition.min.js"></script>
+     <!-- Custom Javascript -->
+    <script src="js/custom-min.js"></script>
+    <!-- Nice Scroll -->
     <script>
-        $(document).ready(function() {
-          $(".animsition").animsition({
-            inClass: 'fade-in',
-            outClass: 'fade-out',
-            inDuration: 800,
-            outDuration: 800,
-            linkElement: '.animsition-link',
-            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-            loading: false,
-            loadingParentElement: 'body', //animsition wrapper element
-            loadingClass: 'animsition-loading',
-            loadingInner: '<img src="images/letter@1x.svg" />', // e.g '<img src="loading.svg" />'
-            timeout: false,
-            timeoutCountdown: 5000,
-            onLoadEvent: true,
-            browser: [ 'animation-duration', '-webkit-animation-duration'],
-            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-            overlay : false,
-            overlayClass : 'animsition-overlay-slide',
-            overlayParentElement : 'body',
-            transition: function(url){ window.location.href = url; }
-          });
-        });
-    </script>
-    <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-    <script>
-      /* Open the sidenav */
-      function openNav() {
-          document.getElementById("mySidenav").style.width = "100%";
-      }
-
-      /* Close/hide the sidenav */
-      function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
-    <script>
-      $(".colRight, body").niceScroll({
-      cursorcolor:"#4e5d55",
-      cursorwidth:"8px",
-      background:"rgba(20,20,20,0)",
-      cursorborderradius:0
-      });
-    </script>
-     <!-- Typeform -->
-    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
+      // $(".colRight, body").niceScroll({
+      // cursorcolor:"#4e5d55",
+      // cursorwidth:"8px",
+      // background:"rgba(20,20,20,0)",
+      // cursorborderradius:0
+      // });
     </script>
   </body>
 </html>
