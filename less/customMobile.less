@@ -157,7 +157,7 @@ header {display:none;}
     z-index: 201; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: white; /* Black*/
+    background-color: @green; 
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: @baseSpace; /* Place content 60px from the top */
     transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
@@ -181,6 +181,7 @@ header {display:none;}
 		    	li a {
 		    		font-size: @basefont;
 		    		font-weight: normal;
+		    		color:white;
 		    	}
 		    	li:last-child a {
 		    	}
@@ -188,6 +189,7 @@ header {display:none;}
 		}
 
 		li a {
+			color: white;
 		    display: block;
 		    padding: @spaceMd/2 0 @spaceMd/2 0;
 		    .bold;
@@ -264,6 +266,7 @@ BUTTONS
 	.close {
 		padding-right: @baseSpace;
 		font-size: @fontXl;
+		color: white;
 	}
 }
 
