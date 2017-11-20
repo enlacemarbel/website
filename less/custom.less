@@ -317,6 +317,9 @@ header {
 		li a:hover {
 			-webkit-animation:opacitychange 0.6s ease;
     	}
+    	li a:active {
+			opacity: 0.5;
+    	}
     	li a.textRed:hover {
 			-webkit-animation:none;
 
@@ -384,19 +387,33 @@ BUTTONS
 
 .btnDark {
 	border-color: @green;
-	//background-color: rgba(255, 255, 255, 0.3);
+	opacity: 1;
 }
 
 .btnLight {
 	color: white !important;
 	background-color: rgba(255, 255, 255, 0.3);
+	opacity: 1;
 }
 
 
 
 // Set hover state with media queries 
 @media (hover:hover) {
+
+	.btn {  
+	
+		transition:all 0.1s ease;
+	}
+
+
     /* Primary Input responds to hover fully, such as a mouse or a Nintendo Wii controller */
+    .btnLight:active {
+    	opacity: 0.5;
+    }
+	.btnDark:hover {
+		opacity: 0.5;
+	}
     .btnLight:hover {
     	color: @green !important;
 		border-color: white;
@@ -460,7 +477,7 @@ ul.baseLink {
 			}
 		}
 
-
+	li:active {opacity: 0.5;}
 	li:last-child {margin-bottom: 0px;}  
 }
 
@@ -766,6 +783,16 @@ CUSTOM IMAGES
     background-position:center center;
 }
 
+.imgMalber {
+	background-image: url("../images/malber.jpg"); 
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
 
+
+/* ==========================================================================
+TREE FAMILY
+========================================================================== */
 
 
